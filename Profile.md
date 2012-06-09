@@ -29,6 +29,5 @@ Switch profiles deprecate the AutoSwitch mode in [[SwitchySharp]]. Like the Auto
 Switch profiles themselves are valid result profiles, which allows more flexible configuration.
 
 ## [[Rule list profile]]
-Rule list profiles extends the "Online Rule List" feature of SwitchySharp. They are in many ways similar with [[PAC profile]]s, but with a few differences:
-* Rule list profiles use [[rule list]]s instead of PAC scripts.
-* Two [[result profile]]s are user-defineable for each rule list: the profile to apply when requests match the rule list, and the default profile when not matching. Either can be any valid result profile, including switch profiles.
+Rule list profiles extend the "Online Rule List" feature of SwitchySharp. They are collections of [[switch profile conditions|condition]]s.
+If any of the conditions are met, the match [[result profile]] is used. If any [[reverse condition]]s are met, or all the conditions failed, the default result profile is used.
