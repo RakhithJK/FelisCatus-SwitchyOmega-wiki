@@ -29,5 +29,5 @@ Switch profiles deprecate the AutoSwitch mode in [[SwitchySharp]]. Like the Auto
 Switch profiles themselves are valid result profiles, which allows more flexible configuration.
 
 ## [[Rule list profile]]
-Rule list profiles extend the "Online Rule List" feature of SwitchySharp. They are collections of [[switch profile conditions|condition]]s.
+Rule list profiles extend the "Online Rule List" feature of SwitchySharp. They are collections of [[switch profile condition|condition]]s.
 If any of the conditions are met, the match [[result profile]] is used. If any [[reverse condition]]s are met, or all the conditions failed, the default result profile is used.
