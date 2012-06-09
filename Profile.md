@@ -25,11 +25,11 @@ A PAC profile contains a [[PAC]] script, which can be included in the profile or
 
 # Complex profiles
 ## [[Switch profile]]
-Switch profiles deprecates the AutoSwitch mode in [[SwitchySharp]]. Like the AutoSwitch mode, they choose a [[result profile]] according to the user defined [[match rules|switch rule]] dynamically for each request when applied.
+Switch profiles deprecate the AutoSwitch mode in [[SwitchySharp]]. Like the AutoSwitch mode, they choose a [[result profile]] according to the user defined [[match rules|switch rule]] dynamically for each request when applied.
 Switch profiles themselves are valid result profiles, which allows more flexible configuration.
 
 ## [[Rule list profile]]
-Rule list profiles extends the "Online Rule List" feature of SwitchySharp. They are in many ways similar with the [[PAC profile]], but with a few differences:
+Rule list profiles extends the "Online Rule List" feature of SwitchySharp. They are in many ways similar with [[PAC profile]]s, but with a few differences:
 * Rule list profiles use [[rule list]]s instead of PAC scripts.
 * [[Default profile|default result]]s are not defined in [[rule list]]s, so they become user-definable.
 * Just like [[switch profile]]s, the default rules can be any valid [[result profile]], including switch profiles.
