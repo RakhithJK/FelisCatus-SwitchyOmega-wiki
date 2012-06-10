@@ -7,7 +7,7 @@ This profile is predefined and not configurable. It is also hidden from the prof
 When this profile is applied, all connections are created directly, without any proxy involved.
 
 # Inclusion in [[switch profile]]s
-**TODO**(catus)
+Direct connections are used when applied automatically, exactly the same way as applied applied manually.
 
 # Design goal
 It should be an wrapper of the Chrome `direct` [proxy mode][Chrome proxy modes]. When included in [[PAC]] scripts, the return value should always be `"DIRECT"`.
