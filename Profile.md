@@ -15,8 +15,9 @@ The direct profile is a predefined profile. When applied, it forces all traffic 
 ## [[System profile]]
 The system profile is a predefined profile which allows using the proxy config of the current environment. This profile cannot be included in a [[switch profile]] because it is not supported in [[PAC]] scripts.
 
-## [[AutoDetect profile]]
-The AutoDetect profile is a predefined profile and an equivalent to Chrome `auto_detect` [mode][Chrome proxy modes].
+## [[Auto-detect profile]]
+The Auto-detect profile is a predefined profile which tells the browser to do proxy auto detection by downloading `http://wpad/wpad.dat` and use the response content as a [[PAC]] script. This profile can be a [[result profile]] of [[Switch profile]]s.
+
 **TODO**(catus): Find out the exact effect of setting Chrome `auto_detect` [mode][Chrome proxy modes], and see whether it can be included in a [[switch profile]].
 
 [Chrome proxy modes]: https://code.google.com/chrome/extensions/proxy.html#proxy_modes
