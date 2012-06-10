@@ -18,8 +18,6 @@ The system profile is a predefined profile which allows using the proxy config o
 ## [[Auto-detect profile]]
 The Auto-detect profile is a predefined profile which tells the browser to do proxy auto detection by downloading `http://wpad/wpad.dat` and use the response content as a [[PAC]] script. This profile can be a [[result profile]] of [[Switch profile]]s.
 
-**TODO**(catus): Find out the exact effect of setting Chrome `auto_detect` [mode][Chrome proxy modes], and see whether it can be included in a [[switch profile]].
-
 [Chrome proxy modes]: https://code.google.com/chrome/extensions/proxy.html#proxy_modes
 ## [[PAC profile]]
 A PAC profile contains a [[PAC]] script, which can be included in the profile or [[loaded dynamically|PAC downloading]] from a URL or a local file.
