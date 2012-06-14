@@ -2,7 +2,7 @@ Host regex conditions are used when [[host wildcard condition]]s are not powerfu
 Though they can make full use of JavaScript [[regex]]es, they are slower.
 
 
-### Example
+## Example
 This pattern mimics the `localHostOrDomainIs` [[PAC]] function: `^test(.example.com)?$`
 
 Matching: `test`, `test.example.com`
