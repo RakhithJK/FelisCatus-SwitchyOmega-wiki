@@ -1,6 +1,6 @@
 The most powerful and the slowest condition type in [[SwitchyOmega]]. Just do what you want to the [[URL]], if you are a big fan of [[regex]]es.
 
-### Example
+## Example
 Pattern: `^https?://\w+\.example\.com/`
 
 Matching: `http://www.example.com/home`, `https://search.example.com/?q=test`
