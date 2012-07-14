@@ -5,22 +5,22 @@ FelisCatus will write the first implementation of the new [[profile]] and [[cond
 Code **won't** be pushed to the git repo until [[PAC generating]] is done.
 
 ### Status
-Current.
+Done.
 
-## The first commit
+## The first push
 FelisCatus will push some code to master. Developers can generate PAC scripts with constructed profiles and conditions.
 However, there won't be any UI at this phrase, so most users won't be able to use it.
 
 Developers should focus on validating the PAC scripts and improving its efficiency.
 
 ### Status
-Estimated date: 2012-07-15
+Done. (pushed: 2012-07-14)
 
 ## Logic testing and fixing
 FelisCatus will write tests and fix bugs on the profile switching logic. Issues should be reported at the issue tracker.
 
 ### Status
-Estimated finish date: 2012-07-20
+Current. Estimated finish date: 2012-07-20
 
 ## UI design
 The HTML and CSS should be done by FelisCatus in this phrase. FelisCatus will start pushing to git master when the UI looks nice and complete. Users can review the UI design and report issues.
