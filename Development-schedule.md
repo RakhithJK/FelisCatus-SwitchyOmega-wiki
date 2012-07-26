@@ -20,7 +20,9 @@ Done. (pushed: 2012-07-14)
 FelisCatus will write tests and fix bugs on the profile switching logic. Issues should be reported at the issue tracker.
 
 ### Status
-Current. Estimated finish date: 2012-07-20
+The logic is somewhat tested and it works fine. Could not find any more bugs at the moment.
+
+Unit tests are not written yet.
 
 ## UI design
 The HTML and CSS should be done by FelisCatus in this phrase. FelisCatus will start pushing to git master when the UI looks nice and complete. Users can review the UI design and report issues.
