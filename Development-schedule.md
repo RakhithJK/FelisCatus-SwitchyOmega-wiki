@@ -28,7 +28,8 @@ Unit tests are not written yet.
 The HTML and CSS should be done by FelisCatus in this phrase. FelisCatus will start pushing to git master when the UI looks nice and complete. Users can review the UI design and report issues.
 
 ### Status
-Estimated finish date: 2012-07-31
+**Still working** : UI turns out to be harder to design than I thought. So I want to put off the finish date for 5 days.
+New estimated finish date: 2012-08-05
 
 ## Interaction code
 Users should be able to change the settings via the UI. Things like switching among profiles and saving settings should be implemented by FelisCatus.
