@@ -29,7 +29,9 @@ The HTML and CSS should be done by FelisCatus in this phrase. FelisCatus will st
 
 ### Status
 **Partially done** : The UI of all settings and some profile types is done. Working on UI for profile settings and popup menu now.
+
 Due to FelisCatus's being fully occupied of other things (and the fact that FelisCatus is **very lazy**), the finish date had to be put off again.
+
 **3rd** estimated finish date: 2012-08-10
 
 ## Interaction code
