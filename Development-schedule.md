@@ -28,14 +28,15 @@ Unit tests are not written yet.
 The HTML and CSS should be done by FelisCatus in this phrase. FelisCatus will start pushing to git master when the UI looks nice and complete. Users can review the UI design and report issues.
 
 ### Status
-**Partially done** : The UI of all settings except profiles is done. Working on UI for profile settings now.
-Estimated finish date: 2012-08-05
+**Partially done** : The UI of all settings and some profile types is done. Working on UI for profile settings and popup menu now.
+Due to FelisCatus's being fully occupied of other things (and the fact that FelisCatus is **very lazy**), the finish date had to be put off again.
+**3rd** estimated finish date: 2012-08-10
 
 ## Interaction code
 Users should be able to change the settings via the UI. Things like switching among profiles and saving settings should be implemented by FelisCatus.
 
 ### Status
-Estimated finish date: 2012-08-15
+Estimated finish date: 2012-08-20
 
 ## Overall testing
 [[SwitchySharp]] could not be updated any more after Late September 2012 because [manifest version 1 starts to be phased out][manifestVersion]. So this project should enter [[stable]] as soon as possible. Branches should be set up for [[beta]] and [[stable]] releases.
@@ -43,7 +44,7 @@ Estimated finish date: 2012-08-15
 [manifestVersion]: https://code.google.com/chrome/extensions/manifestVersion.html
 
 ## Status
-Estimated date of entering beta: 2012-08-20 ~ 2012-08-31
+Estimated date of entering beta: 2012-08-25 ~ 2012-08-31
 
 Estimated date of entering stable: N/A 
 (Beta will be uploaded to [[Chrome Web Store]] if stable is not ready.)
