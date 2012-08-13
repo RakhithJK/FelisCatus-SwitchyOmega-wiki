@@ -28,11 +28,9 @@ Unit tests are not written yet.
 The HTML and CSS should be done by FelisCatus in this phrase. FelisCatus will start pushing to git master when the UI looks nice and complete. Users can review the UI design and report issues.
 
 ### Status
-**Partially done** : The UI of all settings and some profile types is done. Working on UI for profile settings and popup menu now.
-
 Due to FelisCatus's being fully occupied of other things (and the fact that FelisCatus is **very lazy**), the finish date was put off for 3 times.
 
-**Almost finished** by 2012-08-13. Minor tweaks could happen later.
+**Finally (almost) finished** by 2012-08-13. Minor tweaks could happen later.
 
 ## Interaction code
 Users should be able to change the settings via the UI. Things like switching among profiles and saving settings should be implemented by FelisCatus.
