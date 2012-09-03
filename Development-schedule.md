@@ -32,13 +32,14 @@ Due to FelisCatus's being fully occupied of other things (and the fact that Feli
 
 **Finally (almost) finished** by 2012-08-13. Minor tweaks could happen later.
 
+**/* FelisCatus had been busy in real life until 9/1, so the development schedule was delayed for about 15 days. */**
 ## Interaction code
 Users should be able to change the settings via the UI. Things like switching among profiles and saving settings should be implemented by FelisCatus.
 
 ### Status
 FelisCatus is now working on the background page.
 
-Estimated finish date: 2012-08-25
+Estimated finish date: 2012-09-15
 
 ## Overall testing
 [[SwitchySharp]] could not be updated any more after Late September 2012 because [manifest version 1 starts to be phased out][manifestVersion]. So this project should enter [[stable]] as soon as possible. Branches should be set up for [[beta]] and [[stable]] releases.
@@ -46,7 +47,7 @@ Estimated finish date: 2012-08-25
 [manifestVersion]: https://code.google.com/chrome/extensions/manifestVersion.html
 
 ## Status
-Estimated date of entering beta: 2012-08-31
+Estimated date of entering beta: 2012-09-20
 
 Estimated date of entering stable: N/A 
 (Beta will be uploaded to [[Chrome Web Store]] if stable is not ready.)
