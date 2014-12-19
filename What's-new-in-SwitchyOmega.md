@@ -3,6 +3,7 @@ Main Features introduced in SwitchyOmega (2.1):
 * More flexible proxy configurations: Fixed servers, multiple SwitchProfile and rule lists.
 * New types of condition for switching and improvements to the existing condition types.
 * Optimized performance for both PAC script generating and switching.
+* Keyboard shortcut (Alt+Shift+O) and context menu.
 * Improved user experience in options page and dropdown menu.
 * Many Bug fixes and improvements. More testing.
 
