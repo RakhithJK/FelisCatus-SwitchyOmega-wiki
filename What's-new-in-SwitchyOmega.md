@@ -1,5 +1,6 @@
 Main Features introduced in SwitchyOmega (2.1):
 * Proxy authentication (username & password) is now supported.
+* Options syncing between devices.
 * More flexible proxy configurations: Fixed servers, multiple SwitchProfile and rule lists.
 * New types of condition for switching and improvements to the existing condition types.
 * Optimized performance for both PAC script generating and switching.
