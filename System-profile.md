@@ -10,6 +10,4 @@ When this profile is applied, the system proxy settings come into effect.
 This profile cannot be configured as a [[result profile]].
 
 # Design goal
-It should be an wrapper of the Chrome `system` [proxy mode][Chrome proxy modes].
-
-[Chrome proxy modes]: https://code.google.com/chrome/extensions/proxy.html#proxy_modes
+The proxy settings should be cleared when this profile is applied, returning control to Other Extensions/Chromium/System.
