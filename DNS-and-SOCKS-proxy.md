@@ -28,7 +28,7 @@ Note: This topic is completely unrelated with this project, but the wiki page is
 
 要防止DNS请求泄露，请使用以上命令行参数（**请将 `127.0.0.1` 替换成您使用的代理主机地址**）。或者您也可以在Chromium选项中完全禁止DNS预加载。请在选项的"Show advanced settings..."下方**取消选择**此选项：
 
-    [ ] Predict network actions to improve page load performance
+    [ ] 预测网络操作，以提高网页加载速度
 
 提示：此主题与本项目完全无关。但请保留此wiki页面以供作为参考。
 
