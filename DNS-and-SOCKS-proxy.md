@@ -1,7 +1,7 @@
 English
 -------
 
-When using SOCKS proxy with Chromium, some DNS requests may go NOT through the proxy. This is caused by DNS prefetching. Quote from the Chromium browser proxy info page:
+When using SOCKS proxy with Chromium, [some DNS requests may go NOT through the proxy][designDoc]. This is caused by DNS prefetching. Quote from the Chromium browser proxy info page:
 
 >     Note that some traffic such as DNS prefetching will NOT go through the proxy
 >     server. To prevent the browser from doing local DNS resolves try adding this
@@ -18,7 +18,7 @@ Note: This topic is completely unrelated with this project, but the wiki page is
 中文
 ----
 
-在 Chromium 浏览器（以及基于 Chromium 的所有浏览器）中使用 SOCKS 代理时，部分 DNS 请求不会经过服务器发送。这是由 DNS 预加载造成的。以下引用 Chromium 浏览器代理信息页面的文字：
+在 Chromium 浏览器（以及基于 Chromium 的所有浏览器）中使用 SOCKS 代理时，部分 DNS 请求不会经过服务器发送（[英文参考资料][designDoc]）。这是由 DNS 预加载造成的。以下引用 Chromium 浏览器代理信息页面的文字：
 
 >     Note that some traffic such as DNS prefetching will NOT go through the proxy
 >     server. To prevent the browser from doing local DNS resolves try adding this
@@ -31,3 +31,7 @@ Note: This topic is completely unrelated with this project, but the wiki page is
     [ ] Predict network actions to improve page load performance
 
 提示：此主题与本项目完全无关。但请保留此wiki页面以供作为参考。
+
+<!-- References -->
+[designDoc]: http://www.chromium.org/developers/design-documents/network-stack/socks-proxy
+[issue]: https://code.google.com/p/chromium/issues/detail?id=123716
