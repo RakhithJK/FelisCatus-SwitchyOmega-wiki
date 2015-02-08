@@ -11,10 +11,13 @@ Example
 *.example.com
 
 ; This is a UrlWildcardCondition.
-:UrlWildcardCondition https://*.google.com/*
+UrlWildcard: https://*.google.com/*
+
+; You can also write UW for short, representing the same UrlWildcardCondition.
+UW: https://*.google.com/*
 
 ; This is a UrlRegexCondition. Most types of conditions can be represented with :ConditionType pattern
-:UrlRegexCondition ^https://www\.example\.(net|org)/
+UrlRegex: ^https://www\.example\.(net|org)/
 
 ; Conditions can be prefixed with ! to make it exclusive. Any requests matching an exclusive condition will
 ; use the "default profile" instead of "match profile".
@@ -47,7 +50,7 @@ If the rule list contains the `#with result` directive, the name of result profi
 *.example.com +ABC
 
 ; When this condition matches, the profile "DEF" will be used.
-:UrlWildcardCondition https://*.google.com/* +DEF
+UrlWildcard: https://*.google.com/* +DEF
 
 ; Exclusive conditions still DO NOT have profile names.
 !*.example.org
@@ -64,3 +67,78 @@ Additionally, the following changes apply when results are enabled:
 * The result of normal conditions is the result profile attached to it.
 * The result of exclusive conditions is the "Default profile" in the catch-all rule.
   * ... which means exclusive conditions DO NOT have profile names appended to them.
+
+Abbreviations
+-------------
+
+Condition types in the rule list can be abbreviated for short. The following abbreviations are recognized (regardless of case):
+
+* TrueCondition
+  * True
+* FalseCondition
+  * False
+  * Disabled
+* UrlRegexCondition
+  * UR
+  * URegex
+  * UrlR
+  * UrlRegex
+* UrlWildcardCondition
+  * U
+  * UW
+  * Url
+  * UrlW
+  * UWild
+  * UWildcard
+  * UrlWild
+  * UrlWildcard
+* HostRegexCondition
+  * R
+  * HR
+  * Regex
+  * HostR
+  * HRegex
+  * HostRegex
+* HostWildcardCondition
+  * (just write the pattern with no prefix)
+  * H
+  * W
+  * HW
+  * Wild
+  * Wildcard
+  * Host
+  * HostW
+  * HWild
+  * HWildcard
+  * HostWild
+  * HostWildcard
+* BypassCondition
+  * B
+  * Bypass
+* KeywordCondition
+  * K
+  * KW
+  * Keyword
+* IpCondition
+  * Ip
+* HostLevelsCondition
+  * Lv
+  * Level
+  * Levels
+  * HL
+  * HLv
+  * HLevel
+  * HLevels
+  * HostL
+  * HostLv
+  * HostLevel
+  * HostLevels
+* WeekdayCondition
+  * WD
+  * Week
+  * Day
+  * Weekday
+* TimeCondition
+  * T
+  * Time
+  * Hour
