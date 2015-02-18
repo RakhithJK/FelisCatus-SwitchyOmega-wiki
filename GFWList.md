@@ -1,3 +1,5 @@
+以下步骤用于 SwitchyOmega 配合 GFW List 规则使用的场合。中国大陆地区用户建议按照以下说明进行配置。
+
 安装 SwitchyOmega
 -----------------
 
