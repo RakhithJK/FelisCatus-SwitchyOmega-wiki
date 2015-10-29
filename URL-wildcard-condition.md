@@ -9,6 +9,16 @@ Matching: `http://www.example.com/home`, `http://www.example.com/?q=test`
 
 Not matching: `https://www.example.com/home`, `https://www.example.com.test/`
 
+## Use cases
+
+### Matching URL with ports
+The URL wildcard condition type allows matching the full URL, enabling port-based conditions. For example,
+
+* PORT 1935: `*://*:1935/*`
+* PORT 45591: `*://*:45591/*`
+* All HTTPS URLs: `https://*`
+  * The HTTPS protocol defaults to port 443. In that case the port number is not present in the URL string.
+
 ## Design goals
 URL wildcard conditions are not so popular as [[host wildcard conditon]]s. But this is not a reason for not optimizing them.
 
