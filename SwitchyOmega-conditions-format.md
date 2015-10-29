@@ -1,5 +1,3 @@
-Note: This is a proposed format that has not been implemented (yet).
-
 Example
 -------
 
@@ -39,7 +37,7 @@ Design goal
 Result profile
 --------------
 
-If the rule list contains the `#with result` directive, the name of result profile is appended to every condition. Example:
+If the rule list contains the `@with result` directive, the name of result profile is appended to every condition. Example:
 
 ```ini
 [SwitchyOmega Conditions]
