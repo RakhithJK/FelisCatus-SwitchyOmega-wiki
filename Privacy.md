@@ -26,7 +26,7 @@ SwitchyOmega optionally allows you to show failed resources for each tab. If ena
 
 SwitchyOmega 是自由软件。我们尊重您的隐私权。除了选项同步功能以外，我们不会将您的数据提供给任何人。以下列出了所有 SwitchyOmega 使用数据的方式。
 
-当然，您不必听信我们的一家之言。您可以通过[阅读源代码](https://github.com/FelisCatus/SwitchyOmega)来了解 SwitchyOmega 的具体行为，或者咨询该方面的专家人员。
+当然，您不必听信我们的一家之言。您可以通过[阅读源代码](https://github.com/FelisCatus/SwitchyOmega)来了解 SwitchyOmega 的具体行为，或者咨询该方面的专业人士。
 
 ### 代理服务器
 
