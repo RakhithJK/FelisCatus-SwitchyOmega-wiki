@@ -5,8 +5,6 @@ Chromium 52 起，`https://`协议的完整网址将不再提供给 PAC 脚本�
 变化
 ----
 
-If your URL wildcard/regex conditions rely on the **path** part of the URL , then those conditions will not work for `https://` URLs. Host wildcard conditions and other conditions still works fine though.
-
 如果您的网址通配符/正则条件依赖于网址的 **路径** 部分（例如`https://www.example.com/abc/def`中的`/abc/def`部分），这些条件将无法正常匹配 `https://` 网址。域名通配符和其他条件不受影响，仍然可以正常工作。
 
 准确来说，访问形如`https://www.example.com/abc/def`网址时，路径部分会被忽略。匹配时将使用`https://www.example.com/`而不是真正的网址，所以切换结果会和没有路径时相同。
