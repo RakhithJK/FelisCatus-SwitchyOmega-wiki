@@ -1,0 +1,25 @@
+Chromium 52 起，`https://`协议的完整网址将不再提供给 PAC 脚本（[英文参考资料](https://bugs.chromium.org/p/chromium/issues/detail?id=619097)）。因此， SwitchyOmega 中的 **网址通配符** 和 **网址正则表达式** 条件可能会无法正常工作。
+
+此更改是 Chromium 引入的，无法在 SwitchyOmega 中修复。请勿在 GitHub 上反馈此问题，因为这类问题无法处理。
+
+变化
+----
+
+If your URL wildcard/regex conditions rely on the **path** part of the URL , then those conditions will not work for `https://` URLs. Host wildcard conditions and other conditions still works fine though.
+
+如果您的网址通配符/正则条件依赖于网址的 **路径** 部分（例如`https://www.example.com/abc/def`中的`/abc/def`部分），这些条件将无法正常匹配 `https://` 网址。域名通配符和其他条件不受影响，仍然可以正常工作。
+
+准确来说，访问形如`https://www.example.com/abc/def`网址时，路径部分会被忽略。匹配时将使用`https://www.example.com/`而不是真正的网址，所以切换结果会和没有路径时相同。
+
+由于 SwitchyOmega 的扩展图标/悬停提示的更新算法与浏览器的实际行为不同，所以有时可能会有显示错误，例如显示使用了代理但实际上未使用等。我们正在想办法修复图标显示的问题。
+
+暂时解决方案
+----------
+
+最简单的解决方法就是不要使用 URL 匹配的条件类型。这样所有功能都能正常工作。此外，这还能顺便隐藏 SwitchyOmega 选项界面的所有相关错误显示。
+
+有一些 URL 条件还是可以正常工作的，只要不依赖路径部分。比如，`https://*.example.com/*`还能正常工作，因为最后的`*`会匹配任何路径。无论路径是 `/abc/def` 还是 `/` 都能得到正确的结果。您可以尝试修改条件，让其不依赖路径。此外，请注意 `http://`（不安全的）网址还是和以前一样可以正常匹配。
+
+目前仍然可以通过命令行参数或者策略之类的方式来禁用新的行为（[英文说明](https://bugs.chromium.org/p/chromium/issues/detail?id=619097#c4)）。然而 Chromium 项目计划在长期会彻底移除这样的选项。此外，这样做会引入一个安全漏洞（[英文参考资料](https://bugs.chromium.org/p/chromium/issues/detail?id=593759)），导致您访问的完整网址被泄露，即使使用了 HTTPS 也不能防止。因此，建议您在 **完全了解后果并愿意承担风险** 的前提下再使用此方法。
+
+此外，作为最终手段，您也可以降级到 Chromium 51 或以下。 **这样做会导致与上述相同的安全问题。** 另外，这当然还会使得 Chromium 52 及之后引入的安全修复、新功能等都无效，可能会使您更容易被黑客攻击。
