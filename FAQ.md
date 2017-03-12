@@ -40,3 +40,66 @@ Please, calm down. SwitchyOmega never inserts any advertisements or makes any ch
 Most of the time, it is the proxy server you are using who does that. Or sometimes, your ISP is the one to blame. SwitchyOmega has no way to prevent those changes.
 
 If you still don't believe me, please take a look at the [source code](https://github.com/FelisCatus/SwitchyOmega).
+
+Switching
+---------
+
+### Why can't I select System Proxy in Switch Profiles?
+
+According to PAC limitations, this cannot be implemented in SwitchyOmega.
+
+As a workaround, you can create a profile in SwitchyOmega that does the same thing as your system proxy.
+
+If your system proxy is a fixed proxy server, you can create a Proxy Profile in SwitchyOmega and fill in the same protocol, server and port. The newly created Proxy Profile can be used in Switch Profiles.
+
+If your system proxy is set by your network administrator, there is a high chance that [WPAD](https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol) is used. Try creating a PAC Profile and fill in the URL `http://wpad/wpad.dat`. Then, hit the update button to see whether a script can be downloaded or not. If so, the newly created PAC Profile can be used in Switch Profiles. If not, please consult your network administrator.
+
+If your proxy is set by another extension, try selecting `[System Proxy]` from SwitchyOmega popup menu and configure the other extension. Then, open SwitchyOmega popup menu again and see whether there is an `(external profile)` entry on it. If so, please click on that entry and give it a name to create a profile accordingly. The newly created Proxy Profile can be used in Switch Profiles. (This only captures the proxy settings at that moment and will automatically update if the proxy dynamically changes.)
+
+### SwitchyOmega conflicts with other extensions. Now what?
+
+SwitchyOmega will conflict with other extensions trying to control the proxy settings. Such conflicts are caused by the design of the Chrome browser and thus cannot be avoided. Please notice some ad-removal extensions may also use proxy settings to do their trick. Check all your installed extensions.
+
+When SwitchyOmega has a higher priority, it can be configured to voluntarily give back the control by selecting the [System Proxy] item in the popup menu. See above on how to capture the proxy settings into SwitchyOmega. Otherwise, you will see a red badge on the SwitchyOmega icon indicating insufficient priority.
+
+Re-installing SwitchyOmega should raise its priority, providing a possible workaround.
+
+Networking
+----------
+
+### I can't even access the Internet when I enable SwitchyOmega!
+
+There is definitely something wrong with your configuration, your proxy server or your network connection. Here are the things to check.
+
+* Is your proxy server running? If you use a proxy software, make sure to start it as well.
+  - If you don't have a proxy server, then you don't need SwitchyOmega.
+* Is your network connection working? Try selecting `[Direct Connection]` and visit a webpage.
+  - Also, try other network diagnostic tools and methods.
+* Did you choose the right profile in the popup menu? You need to choose the one you configure.
+* Did you specify the wrong host, port or protocol?
+  - Type `chrome://net-internals/#proxy` in the address bar and Enter. See what's there.
+  - If it shows the wrong information, fix that in SwitchyOmega options and choose it from the popup menu.
+  - If it shows totally different things, see the FAQ about conflicts.
+  - Hint: Most of the time the protocol should be HTTP or SOCKS/SOCKS5. HTTPS proxies are pretty rare.
+  - Hint: Most of the time you do not need advanced settings. Try only using the `(default)` row.
+* If none of above applies, please open an issue with the following information.
+  - Screenshot of your Proxy Profile on the options page.
+  - Copy & paste or screenshot of `chrome://net-internals/#proxy`.
+  - You may change or mask the server address to protect your privacy.
+  - What URL are you trying to visit?
+  - What is the error code on the error page? It begins with `ERR_`.
+
+### Why can't I use username/password authentication for SOCKS proxies?
+
+SOCKS Authentication is [not implemented in Chrome](https://code.google.com/p/chromium/issues/detail?id=256785) and therefore cannot be done in SwitchyOmega. No Chrome Extension can do that as far as we know.
+
+### Does SwitchyOmega support remote DNS resolution?
+
+Yes, since Chrome always use remote DNS resolution. In fact, there is no way for SwitchyOmega to tell it not to.
+
+If you are using SOCKS5, please be aware of [a potential leak](https://github.com/FelisCatus/SwitchyOmega/wiki/DNS-and-SOCKS-proxy#english). See the linked page for workarounds.
+
+### Can SwitchyOmega support route tables or IP-based/geo-based switching?
+
+No. Proxies do not operate on the IP protocol layer. Route tables will only work with VPNs. As a proxy configuration tool, it is natural that SwitchyOmega cannot provide such support.
+
