@@ -103,3 +103,13 @@ If you are using SOCKS5, please be aware of [a potential leak](https://github.co
 
 No. Proxies do not operate on the IP protocol layer. Route tables will only work with VPNs. As a proxy configuration tool, it is natural that SwitchyOmega cannot provide such support.
 
+User Interface
+--------------
+
+### Sometimes the popup window is not the right size / got cut off on the top.
+
+Similar issues include "[Direct]" not being visible (or just a blue bar is visible) and so on.
+
+This seems to be [a known bug in Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=457887) that only happens on Mac OS X due to the way popups are drawn. This affects all extensions that dynamically resizes the popup. (SwitchyOmega does that because it adds one menu item for each profile you configure.)
+
+There does not seem to be a good way to work around the problem in SwitchyOmega right now.
