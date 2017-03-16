@@ -1,5 +1,5 @@
 Main Features introduced in SwitchyOmega (2.4):
-* Proxy authentication (username & password) is now supported.
+* HTTP/HTTPS Proxy authentication (username & password) is now supported.
 * Options syncing between devices.
 * More flexible proxy configurations: Fixed servers, multiple SwitchProfile and rule lists.
 * New types of condition for switching and improvements to the existing condition types.
