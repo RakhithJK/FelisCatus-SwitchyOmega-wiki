@@ -64,6 +64,12 @@ When SwitchyOmega has a higher priority, it can be configured to voluntarily giv
 
 Re-installing SwitchyOmega should raise its priority, providing a possible workaround.
 
+### Can you add support for tab-based or window-based switching?
+
+Sorry, no. Tab information is not available to PAC scripts. Since SwitchyOmega uses PAC scripts behind the scene, it also suffers from such limitations.
+
+If you need to use different proxies for different windows, you can [add more persons in Chrome](https://support.google.com/chrome/answer/2364824). Each person can install SwitchyOmega and keep their own settings. This allows you to open one window for each person with different proxy settings.
+
 Networking
 ----------
 
