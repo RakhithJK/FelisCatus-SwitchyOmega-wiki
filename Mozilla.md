@@ -5,7 +5,13 @@ This project is being ported to Mozilla WebExtensions platform, which allows ins
 
 ***Warning: Firefox support is highly experimental!***
 
+To test, please build the project under branch `feature/webextension`. Then use Firefox's Debugging Tools to `Load Temporary Add-on` with `omega-target-chromium-extension/build/manifest.json`.
+
+Packed extension does not work yet.
+
+<!--
 To test, please install the latest build from https://addons.mozilla.org/en-US/firefox/addon/switchyomega/
+-->
 
 ***Firefox Nightly build with version number >= 55 required! Otherwise it won't work!**
 
@@ -23,7 +29,11 @@ NOTE: In case of other issues, please right click on the extension icon and sele
 
 ***注意！ Firefox 支持目前还处于早期实验阶段！***
 
+要进行测试, 请编译 `feature/webextension` 分支下的项目. 然后使用 Firefox 的 Debugging Tools 中的 `Load Temporary Add-on`，选择 `omega-target-chromium-extension/build/manifest.json`.
+
+<!--
 要进行测试，请在这里安装最新的版本： https://addons.mozilla.org/en-US/firefox/addon/switchyomega/
+-->
 
 ***必须使用 Firefox Nightly 版本大于 55 方可安装！否则根本无法运行！**
 
