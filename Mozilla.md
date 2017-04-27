@@ -1,17 +1,13 @@
 English
 -------
 
-This project is being ported to Mozilla WebExtensions platform, which allows installing in Firefox.
+This project is being ported to Mozilla WebExtensions platform, which allows installing in Firefox Nightly build >= 55.
 
 ***Warning: Firefox support is highly experimental!***
 
-To test, please build the project under branch `feature/webextension`. Then use Firefox's Debugging Tools to `Load Temporary Add-on` with `omega-target-chromium-extension/build/manifest.json`.
-
-Packed extension does not work yet.
-
-<!--
 To test, please install the latest build from https://addons.mozilla.org/en-US/firefox/addon/switchyomega/
--->
+
+If the link above is broken, you can also build the project under branch `feature/webextension`. Then use Firefox's Debugging Tools to `Load Temporary Add-on` with `omega-target-chromium-extension/build/manifest.json`.
 
 ***Firefox Nightly build with version number >= 55 required! Otherwise it won't work!**
 
@@ -19,7 +15,7 @@ To test, please install the latest build from https://addons.mozilla.org/en-US/f
 
 1. `HTTP` proxies are wrongly treated as `HTTPS` proxies.
     * This is a known bug in Mozilla: https://bugzilla.mozilla.org/show_bug.cgi?id=1359417
-    * There is no workaround right now. So your HTTP proxies probably won't work.
+    * There is no workaround right now. So your HTTP proxies probably won't work. Other proxies are not affected.
 1. PAC Profiles are not working either applied directly or through Switch Profiles.
     * For requests that ends up switched to PAC Profiles, an error is raised and direct connection is used instead.
 1. Options syncing is disabled by default behind a Firefox flag and has not been tested yet.
@@ -30,15 +26,13 @@ NOTE: In case of other issues, please right click on the extension icon and sele
 中文
 ---
 
-此项目正在迁移到 Mozilla WebExtensions 平台，目前已经支持在 Firefox 中安装.
+此项目正在迁移到 Mozilla WebExtensions 平台，目前已经支持在 Firefox Nightly 55 以上的版本中安装.
 
 ***注意！ Firefox 支持目前还处于早期实验阶段！***
 
-要进行测试, 请编译 `feature/webextension` 分支下的项目. 然后使用 Firefox 的 Debugging Tools 中的 `Load Temporary Add-on`，选择 `omega-target-chromium-extension/build/manifest.json`.
-
-<!--
 要进行测试，请在这里安装最新的版本： https://addons.mozilla.org/en-US/firefox/addon/switchyomega/
--->
+
+如果以上链接无法访问，您也可以编译 `feature/webextension` 分支下的项目. 然后使用 Firefox 的 Debugging Tools 中的 `Load Temporary Add-on`，选择 `omega-target-chromium-extension/build/manifest.json`.
 
 ***必须使用 Firefox Nightly 版本大于 55 方可安装！否则根本无法运行！**
 
@@ -46,7 +40,7 @@ NOTE: In case of other issues, please right click on the extension icon and sele
 
 1. `HTTP` 代理服务器会被错误地当成 `HTTPS` 代理服务器处理。
     * 这是 Mozilla 的已知问题: https://bugzilla.mozilla.org/show_bug.cgi?id=1359417
-    * 目前没有可以绕过这个的办法，所以您的 `HTTP` 代理应该没办法正常工作。
+    * 目前没有可以绕过这个的办法，所以您的 `HTTP` 代理应该没办法正常工作。其他类型代理不受影响。
 1. PAC 情景模式无法使用。无论是单独使用 PAC 情景模式还是自动切换中使用都不能工作。
     * 如果某个请求切换到了 PAC 情景模式，会出错，然后那个请求会变成使用直接连接。
 1. 选项同步默认无法使用，因为同步存储在 Firefox 的 flags 中默认禁用。此功能未经过测试！
