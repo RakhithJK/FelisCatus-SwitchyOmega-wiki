@@ -1,3 +1,5 @@
+Warning: As of Chromium 52, the full URLs of the `https://` scheme are [no longer provided to PAC scripts](https://github.com/FelisCatus/SwitchyOmega/wiki/Chromium-Full-URL-Limitation). As a result, **URL wildcard** and **URL regex** conditions may not work properly in SwitchyOmega.
+
 The most powerful and the slowest condition type in [[SwitchyOmega]]. Just do what you want to the [[URL]], if you are a big fan of [[regex]]es.
 
 ## Example
