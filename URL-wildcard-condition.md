@@ -1,3 +1,5 @@
+Warning: As of Chromium 52, the full URLs of the `https://` scheme are [no longer provided to PAC scripts](https://github.com/FelisCatus/SwitchyOmega/wiki/Chromium-Full-URL-Limitation). As a result, **URL wildcard** and **URL regex** conditions may not work properly in SwitchyOmega.
+
 When matching the host name is not sufficient, wildcard matching can be performed on the whole URL.
 
 For matching entire sites, use [[host wildcard condition]]s. For keyword matching on HTTP only, use [[keyword condition]]s. The two new types of conditions should replace most usage of URL wildcard conditions.
