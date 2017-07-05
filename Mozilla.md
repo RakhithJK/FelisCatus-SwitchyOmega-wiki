@@ -13,12 +13,9 @@ If the link above is broken, you can also build the project under branch `featur
 
 ### Known Issues
 
-1. `HTTP` proxies are wrongly treated as `HTTPS` proxies.
-    * This is a known bug in Mozilla: https://bugzilla.mozilla.org/show_bug.cgi?id=1359417
-    * There is no workaround right now. So your HTTP proxies probably won't work. Other proxies are not affected.
 1. PAC Profiles are not working either applied directly or through Switch Profiles.
     * For requests that ends up switched to PAC Profiles, an error is raised and direct connection is used instead.
-1. Options syncing is disabled by default behind a Firefox flag and has not been tested yet.
+1. Options syncing is disabled by default behind a Firefox flag and has not been fully tested yet.
     * You may enable syncing in flags if you want, but please do report any issues you encounter.
 
 NOTE: In case of other issues, please right click on the extension icon and select "Report Issue" from the menu so that I can locate and fix the issue more quickly.
@@ -38,12 +35,9 @@ NOTE: In case of other issues, please right click on the extension icon and sele
 
 ### 已知问题
 
-1. `HTTP` 代理服务器会被错误地当成 `HTTPS` 代理服务器处理。
-    * 这是 Mozilla 的已知问题: https://bugzilla.mozilla.org/show_bug.cgi?id=1359417
-    * 目前没有可以绕过这个的办法，所以您的 `HTTP` 代理应该没办法正常工作。其他类型代理不受影响。
 1. PAC 情景模式无法使用。无论是单独使用 PAC 情景模式还是自动切换中使用都不能工作。
     * 如果某个请求切换到了 PAC 情景模式，会出错，然后那个请求会变成使用直接连接。
-1. 选项同步默认无法使用，因为同步存储在 Firefox 的 flags 中默认禁用。此功能未经过测试！
+1. 选项同步默认无法使用，因为同步存储在 Firefox 的 flags 中默认禁用。此功能未经过充分测试。
     * 您可以自行在 flags 中启用，但遇到问题请及时反馈。
 
 注：如您遇到了其他问题，请使用图标右键菜单的“反馈问题”功能提交错误报告，以便开发者及时修复，谢谢。
