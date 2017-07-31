@@ -1,7 +1,7 @@
 English
 -------
 
-This project is being ported to Mozilla WebExtensions platform, which allows installing in Firefox Nightly build >= 55.
+This project is being ported to Mozilla WebExtensions platform, which allows installing in Firefox Nightly build >= 56.
 
 ***Warning: Firefox support is highly experimental!***
 
@@ -9,7 +9,9 @@ To test, please install the latest build from https://addons.mozilla.org/en-US/f
 
 If the link above is broken, you can also build the project under branch `feature/webextension`. Then use Firefox's Debugging Tools to `Load Temporary Add-on` with `omega-target-chromium-extension/build/manifest.json`.
 
-***Firefox Nightly build with version number >= 55 required! Otherwise it won't work!**
+**Since the WebExtensions API is still under heavy development on Mozilla's side, we strongly recommended using the Nightly channel (>= 56.0) and update frequently.** The Developer Edition and Beta channels will not receive fixes as often and therefore unsupported by SwitchyOmega.
+
+Please make sure that you are using the latest Nightly build before you report issues. Build number AND build date should be mentioned somewhere in the issue.
 
 ### Known Issues
 
@@ -23,7 +25,7 @@ NOTE: In case of other issues, please right click on the extension icon and sele
 中文
 ---
 
-此项目正在迁移到 Mozilla WebExtensions 平台，目前已经支持在 Firefox Nightly 55 以上的版本中安装.
+此项目正在迁移到 Mozilla WebExtensions 平台，目前已经支持在 Firefox Nightly 56 以上的版本中安装.
 
 ***注意！ Firefox 支持目前还处于早期实验阶段！***
 
@@ -31,7 +33,9 @@ NOTE: In case of other issues, please right click on the extension icon and sele
 
 如果以上链接无法访问，您也可以编译 `feature/webextension` 分支下的项目. 然后使用 Firefox 的 Debugging Tools 中的 `Load Temporary Add-on`，选择 `omega-target-chromium-extension/build/manifest.json`.
 
-***必须使用 Firefox Nightly 版本大于 55 方可安装！否则根本无法运行！**
+**由于 WebExtensions API 仍然在早期开发中，我们强烈建议您使用 Nightly 频道并经常从 Mozilla 获取最新更新。** 开发者版 (Developer Edition) 或者测试版 (Beta) 的故障修复速度较慢，因此 SwitchyOmega 不支持这些频道的版本。
+
+在反馈问题前，请确定您正在使用最新的 Nightly 编译版。反馈问题时请提供您的编译版本号和编译日期。
 
 ### 已知问题
 
