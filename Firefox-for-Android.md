@@ -21,7 +21,7 @@ To debug, please enable `Debugging over WiFi`
 
 ## 中文
 
-SwitchyOmega **只支持 [Nightly build](https://www.mozilla.org/en-US/firefox/android/nightly/all/) >= 57.1a !!** 您也可以 [在 Google Play 上下载 Firefox Nightly](https://play.google.com/store/apps/details?id=org.mozilla.fennec_aurora). 请不要尝试更旧的版本。
+SwitchyOmega **只支持 [Firefox for Android Nightly build](https://www.mozilla.org/en-US/firefox/android/nightly/all/) >= 57.1a !!** 您也可以 [在 Google Play 上下载 Firefox Nightly](https://play.google.com/store/apps/details?id=org.mozilla.fennec_aurora). 请不要尝试更旧的版本。
 
 安装了 Nightly 以后，请从 [Mozilla Add-Ons](https://addons.mozilla.org/en-US/firefox/addon/switchyomega/) 安装 SwitchyOmega.
 
