@@ -54,7 +54,7 @@ If your system proxy is a fixed proxy server, you can create a Proxy Profile in 
 
 If your system proxy is set by your network administrator, there is a high chance that [WPAD](https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol) is used. Try creating a PAC Profile and fill in the URL `http://wpad/wpad.dat`. Then, hit the update button to see whether a script can be downloaded or not. If so, the newly created PAC Profile can be used in Switch Profiles. If not, please consult your network administrator.
 
-If your proxy is set by another extension, try selecting `[System Proxy]` from SwitchyOmega popup menu and configure the other extension. Then, open SwitchyOmega popup menu again and see whether there is an `(external profile)` entry on it. If so, please click on that entry and give it a name to create a profile accordingly. The newly created Proxy Profile can be used in Switch Profiles. (This only captures the proxy settings at that moment and will automatically update if the proxy dynamically changes.)
+If your proxy is set by another extension, try selecting `[System Proxy]` from SwitchyOmega popup menu and configure the other extension. Then, open SwitchyOmega popup menu again and see whether there is an `(external profile)` entry on it. If so, please click on that entry and give it a name to create a profile accordingly. The newly created Proxy Profile can be used in Switch Profiles. (This only captures the proxy settings at that moment and will NOT automatically update if the proxy dynamically changes.)
 
 ### SwitchyOmega conflicts with other extensions. Now what?
 
