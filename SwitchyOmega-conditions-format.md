@@ -4,8 +4,12 @@ Example
 ```ini
 [SwitchyOmega Conditions]
 ; A line starting with semi-colon is a comment line, ignored by the parser.
+; When you edit rules using the table-based visual editor in SwitchyOmega options page, the original
+; formatting, including the comments, is NOT preserved.
 
-; This is a HostWildcardCondition matching *.example.com.
+; If you want to stick a note associated with the rule, use a @rule directive above each rule.
+; Such notes will be picked up by the visual editor and re-emitted when you publish in text format.
+@note This is a HostWildcardCondition matching *.example.com.
 *.example.com
 
 ; This is a UrlWildcardCondition.
@@ -19,6 +23,7 @@ UrlRegex: ^https://www\.example\.(net|org)/
 
 ; Conditions can be prefixed with ! to make it exclusive. Any requests matching an exclusive condition will
 ; use the "default profile" instead of "match profile".
+@note Use the default profile for internal stuff at my company
 !*.internal.example.org
 
 ; Conditions are matched against the request in top-down order.
@@ -45,9 +50,11 @@ If the rule list contains the `@with result` directive, the name of result profi
 @with result
 
 ; When this condition matches, the profile "ABC" will be used.
+@note Use ABC Profile for example.com
 *.example.com +ABC
 
 ; When this condition matches, the profile "DEF" will be used.
+@note DEF is my preferred profile for Google
 UrlWildcard: https://*.google.com/* +DEF
 
 ; Exclusive conditions still DO NOT have profile names.
